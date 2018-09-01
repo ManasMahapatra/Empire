@@ -11,8 +11,6 @@ def generate_dll(powershellCode, arch):
         origPath = "%s/data/misc/ReflectivePick_x86_orig.dll" % (helpers.get_config('install_path'))
     elif arch.lower() == 'x64':
         origPath = "%s/data/misc/ReflectivePick_x64_orig.dll" % (helpers.get_config('install_path'))
-    else:
-        print "Bhakk BC"
      
     if os.path.isfile(origPath):
         dllRaw = ''
